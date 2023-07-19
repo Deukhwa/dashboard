@@ -21,8 +21,8 @@ app.use(morgan('common'));
 app.use(express.urlencoded({ extended: false }));
 
 // data imports
-import User from './models/User.js';
-import { dataUser, dataProduct, dataProductStat } from './data/index.js';
+// import User from './models/User.js';
+// import { dataUser, dataProduct, dataProductStat } from './data/index.js';
 // import Product from './models/Product.js';
 // import ProductStat from './models/ProductStat.js';
 
