@@ -25,6 +25,8 @@ app.use(express.urlencoded({ extended: false }));
 // import { dataUser, dataProduct, dataProductStat } from './data/index.js';
 // import Product from './models/Product.js';
 // import ProductStat from './models/ProductStat.js';
+import { dataTransaction } from './data/index.js';
+import Transaction from './models/Transaction.js';
 
 // ROUTES
 app.use('/client', clientRoutes);
@@ -47,6 +49,7 @@ mongoose
       // User.insertMany(dataUser);
       // Product.insertMany(dataProduct);
       // ProductStat.insertMany(dataProductStat);
+      // Transaction.insertMany(dataTransaction);
     });
   })
   .catch((error) => {
