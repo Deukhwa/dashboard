@@ -32,7 +32,9 @@ import {
   dataProductStat,
   dataTransaction,
   dataOverallStat,
+  dataAffiliateStat,
 } from './data/index.js';
+import AffiliateStat from './models/AffiliateStat.js';
 
 // ROUTES
 app.use('/client', clientRoutes);
@@ -57,6 +59,7 @@ mongoose
       // ProductStat.insertMany(dataProductStat);
       // Transaction.insertMany(dataTransaction);
       // OverallStat.insertMany(dataOverallStat);
+      // AffiliateStat.insertMany(dataAffiliateStat);
     });
   })
   .catch((error) => {
