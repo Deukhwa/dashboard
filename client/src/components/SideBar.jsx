@@ -124,7 +124,7 @@ const SideBar = ({
               backgroundColor: theme.palette.background.alt,
               width: drawerWidth,
               boxSizing: 'border-box',
-              borderWidth: isNonMobile ? '0px' : '1px',
+              borderWidth: isNonMobile ? 0 : '1px',
             },
           }}
         >
@@ -193,7 +193,7 @@ const SideBar = ({
             </List>
           </Box>
 
-          <Box position="absolute" bottom="2rem">
+          <Box bottom="2rem">
             <Divider />
             <FlexBetween textTransform="none" gap="1rem" m="1.5rem 2rem 0 3rem">
               <Box
