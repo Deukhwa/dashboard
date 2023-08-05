@@ -35,7 +35,6 @@ const Performance = () => {
       renderCell: (params) => `$${Number(params.value).toFixed(2)}`,
     },
   ];
-  console.log(data);
   return (
     <Box m="1.5rem 2.5rem">
       <Header
